@@ -60,3 +60,7 @@ watchfiles
     # via uvicorn
 websockets
     # via uvicorn
+#necessarie per leggere e scrivere excel
+openpyxl
+    # via pandas
+pandas
