@@ -3,7 +3,7 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name =  "fastapi-vercel"
+name =  "Chameleon API"
 version = "0.0.1"
 description = "FastAPI project deployed on Vercel"
 readme = "README.md"
