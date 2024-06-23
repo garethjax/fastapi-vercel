@@ -1,6 +1,6 @@
 from typing import Optional
 import httpx
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
@@ -22,4 +22,10 @@ client = httpx.AsyncClient(limits=limits, timeout=timeout)
 async def read_root(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
+# Aggiungi qui altre route se necessario
+
+# Route per gestire le 404
+@app.get("/{full_path:path}", response_class=HTMLResponse)
+async def catch_all(request: Request, full_path: str):
+    return templates.TemplateResponse("404.html", {"request": request})
 

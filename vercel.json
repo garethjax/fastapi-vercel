@@ -5,6 +5,7 @@
 	"routes": [
 		{ "src": "/", "dest": "app.py" },
 		{ "src": "/manuale", "dest": "app.py" },
-		{ "src": "/openmiaapi.json", "dest": "app.py" }
+		{ "src": "/openmiaapi.json", "dest": "app.py" },
+		{ "src": "/(.*)", "dest": "app.py" }
 	]
 }
