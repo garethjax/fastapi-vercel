@@ -4,59 +4,59 @@
 #
 #    pip-compile
 #
-anyio==3.6.2
+anyio
     # via
     #   httpcore
     #   starlette
     #   watchfiles
-certifi==2020.12.5
+certifi
     # via
     #   httpcore
     #   httpx
-click==7.1.2
+click
     # via uvicorn
-fastapi==0.95.2
+fastapi
     # via fastapi-vercel (pyproject.toml)
-h11==0.14.0
+h11
     # via
     #   httpcore
     #   uvicorn
-httpcore==0.17.0
+httpcore
     # via httpx
-httptools==0.5.0
+httptools
     # via uvicorn
-httpx==0.24.0
+httpx
     # via fastapi-vercel (pyproject.toml)
-idna==2.10
+idna
     # via
     #   anyio
     #   httpx
-jinja2==3.1.2
+jinja2
     # via fastapi-vercel (pyproject.toml)
-markupsafe==2.1.2
+markupsafe
     # via jinja2
-pydantic==1.10.7
+pydantic
     # via
     #   fastapi
     #   fastapi-vercel (pyproject.toml)
-python-dotenv==0.15.0
+python-dotenv
     # via uvicorn
-pyyaml==5.4.1
+pyyaml
     # via uvicorn
-sniffio==1.2.0
+sniffio
     # via
     #   anyio
     #   httpcore
     #   httpx
-starlette==0.27.0
+starlette
     # via fastapi
-typing-extensions==4.5.0
+typing-extensions
     # via pydantic
-uvicorn[standard]==0.22.0
+uvicorn[standard]
     # via fastapi-vercel (pyproject.toml)
-uvloop==0.17.0
+uvloop
     # via uvicorn
-watchfiles==0.19.0
+watchfiles
     # via uvicorn
-websockets==11.0.3
+websockets
     # via uvicorn
