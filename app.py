@@ -5,7 +5,11 @@ from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from models import GithubUserModel
 
-app = FastAPI()
+app = FastAPI(
+    docs_url="/manuale",  # Cambia /docs in /manuale
+    openapi_url="/openmiaapi.json"  # Cambia /openapi.json in /openmiaapi.json
+)
+
 templates = Jinja2Templates(directory="templates")
 
 limits = httpx.Limits(max_keepalive_connections=5, max_connections=10)
